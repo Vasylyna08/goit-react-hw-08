@@ -1,0 +1,29 @@
+.contactContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: baseline;
+}
+
+.contactInfoItem {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.deleteButton {
+  background-color: rgb(228, 227, 227);
+  color: black;
+  padding: 8px;
+  text-align: center;
+  border-radius: 4px;
+  font-size: 18px;
+  border: 2px solid rgb(128, 128, 128);
+  height: 36px;
+}
