@@ -3,11 +3,29 @@
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
+  justify-content: center;
 }
 
 .contactItem {
-  width: 300px;
+  width: 335px;
   border: 2px solid black;
   border-radius: 12px;
   padding: 8px;
+}
+
+@media only screen and (min-width: 768px) {
+  .contactList {
+    gap: 20px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .contactList {
+    flex-basis: calc((100% - 30px) / 4);
+    gap: 30px 10px;
+  }
+
+  .contactItem {
+    width: 280px;
+  }
 }

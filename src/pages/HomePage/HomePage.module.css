@@ -1,0 +1,38 @@
+.container {
+  margin-top: 15px;
+  background-color: rgba(46, 47, 66, 0.7);
+  background-image: url('../../images/fone.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 320px;
+  min-height: 432px;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.title {
+  color: blue;
+  margin-top: 90px;
+  font-size: 40px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    min-height: 500px;
+  }
+  .title {
+    margin-top: 100px;
+    font-size: 50px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .container {
+    min-height: 600px;
+  }
+  .title {
+    margin-top: 170px;
+    font-size: 70px;
+  }
+}

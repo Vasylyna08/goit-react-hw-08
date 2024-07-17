@@ -1,9 +1,13 @@
 .searchTitle {
-  font-size: 18px;
+  color: rgba(7, 7, 7, 0.95);
+  font-weight: 500;
+  text-align: center;
+  font-size: 22px;
+  margin-left: 5px;
 }
 
 .searchInput {
-  width: 348px;
+  width: 337px;
   display: flex;
   flex-direction: column;
   font-size: 18px;
@@ -12,8 +16,19 @@
   border-radius: 4px;
   font-size: 18px;
   border: 2px solid rgb(128, 128, 128);
+  margin: 0 auto 30px;
 }
 
 ::placeholder {
   color: rgba(14, 14, 14, 0.3);
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    margin-top: 22px;
+  }
+
+  .searchInput {
+    width: 330px;
+  }
 }

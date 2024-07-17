@@ -1,0 +1,11 @@
+.title {
+  color: rgba(0, 0, 0, 0.952);
+  margin-top: 30px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.contactForm {
+  width: 335px;
+  margin: 0 auto;
+}

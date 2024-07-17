@@ -1,0 +1,15 @@
+.nav {
+  display: flex;
+}
+.navLink {
+  padding: 10px 20px;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+}
+.active {
+  color: blue;
+}
+.navLink:hover {
+  opacity: 0.9;
+  color: blue;
+}
