@@ -1,5 +1,4 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
-// import { setAuthHeader, clearAuthHeader } from '../../axios.js';
 import {
   requestLogOutUser,
   requestLoginUser,
@@ -7,14 +6,13 @@ import {
   requestRefreshUser,
   setAuthHeader,
   clearAuthHeader,
-} from '../../services/userApi.js';
+} from '../../services/api.js';
 
 export const register = createAsyncThunk(
   'auth/register',
   async (newUser, thunkApi) => {
     try {
       const data = await requestSignupUser(newUser);
-      // setAuthHeader(data.token);
       console.log(data);
       return data;
     } catch (error) {
@@ -28,7 +26,6 @@ export const login = createAsyncThunk(
   async (userInfo, thunkApi) => {
     try {
       const data = await requestLoginUser(userInfo);
-      // setAuthHeader(data.token);
       return data;
     } catch (error) {
       return thunkApi.rejectWithValue(error.message);

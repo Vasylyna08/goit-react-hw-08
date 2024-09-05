@@ -1,0 +1,47 @@
+.container {
+  text-align: center;
+}
+
+.text {
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  margin-bottom: 16px;
+  font-size: 18px;
+}
+
+.span {
+  color: blue;
+}
+
+.button {
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  font-size: 18px;
+  padding: 4px 8px;
+  border: 2px solid rgb(31, 30, 30);
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+
+.button:hover {
+  border: 2px solid blue;
+  color: blue;
+}
+
+@media only screen and (min-width: 768px) {
+  .text {
+    font-size: 20px;
+  }
+  .button {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .text {
+    font-size: 22px;
+  }
+  .button {
+    font-size: 22px;
+  }
+}

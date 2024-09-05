@@ -1,4 +1,4 @@
-import { MutatingDots } from 'react-loader-spinner';
+import { Bars } from 'react-loader-spinner';
 import css from './Loader.module.css';
 
 const Loader = () => {
@@ -7,7 +7,7 @@ const Loader = () => {
       <Bars
         height="80"
         width="80"
-        color="#4fa94d"
+        color="#0000ff"
         ariaLabel="bars-loading"
         wrapperStyle={{}}
         wrapperClass=""

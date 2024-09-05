@@ -15,15 +15,17 @@
   display: flex;
   align-items: center;
   gap: 6px;
+  font-weight: 500;
 }
 
 .deleteButton {
   background-color: rgb(228, 227, 227);
-  color: black;
-  padding: 8px;
+  color: blue;
+  font-weight: 500;
+  padding: 4px 8px;
   text-align: center;
   border-radius: 4px;
   font-size: 18px;
-  border: 2px solid rgb(128, 128, 128);
+  border: 2px solid blue;
   height: 36px;
 }

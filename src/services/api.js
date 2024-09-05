@@ -1,9 +1,7 @@
-// import { instance } from '../axios';
-
 import axios from 'axios';
 
-export const instance = axios.create({
-  baseURL: 'https://connections-api.herokuapp.com',
+const instance = axios.create({
+  baseURL: 'https://connections-api.goit.global/',
 });
 
 export const setAuthHeader = token => {

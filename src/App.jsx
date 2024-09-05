@@ -1,20 +1,22 @@
 import css from './App.module.css';
-import { useEffect, Suspense } from 'react';
+import { useEffect, lazy, Suspense } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Route, Routes } from 'react-router-dom';
 
 import Layout from './components/Layout/Layout';
 import Loader from './components/Loader/Loader';
-
-import ContactsPage from './pages/ContactsPage/ContactsPage';
-import HomePage from './pages/HomePage/HomePage';
-import LoginPage from './pages/LoginPage/LoginPage';
-import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
-import RegistrationPage from './pages/RegistrationPage/RegistrationPage';
 import RestrictedRoute from './components/RestrictedRoute';
 import PrivateRoute from './components/PrivateRoute';
 import { refreshUser } from './redux/auth/operations';
 import { selectIsRefreshing } from './redux/auth/selectors';
+
+const HomePage = lazy(() => import('./pages/HomePage/HomePage'));
+const RegistrationPage = lazy(() =>
+  import('./pages/RegistrationPage/RegistrationPage')
+);
+const LoginPage = lazy(() => import('./pages/LoginPage/LoginPage'));
+const ContactsPage = lazy(() => import('./pages/ContactsPage/ContactsPage'));
+const NotFoundPage = lazy(() => import('./pages/NotFoundPage/NotFoundPage'));
 
 const App = () => {
   const dispatch = useDispatch();
