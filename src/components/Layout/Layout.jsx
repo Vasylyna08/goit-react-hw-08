@@ -13,8 +13,8 @@ const Layout = ({ children }) => {
         reverseOrder={false}
         toastOptions={{
           style: {
-            background: '#f9e3cc',
-            color: '#f57a38',
+            background: 'faf0e6',
+            color: '#0000ff',
             marginTop: '25px',
           },
         }}
